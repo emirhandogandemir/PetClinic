@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+<link th:href="@{/css/petclinic.css}" type="text/css" rel="stylesheet" />
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<table>
+ 
+<thead> 
+<tr>
+<td> Id</td>
+<td> FirstName</td>
+<td> LastName</td>
+
+</tr>
+
+</thead>
+
+<th:block th:each="owner:${owners}">
+	<tr> 
+	<td td:text="${owner.id}" />
+	<td td:text="${owner.firstName}>" />
+	<td td:text="${owner.lastName}>" />
+	</tr>
+ </th:block>
+
+</table>
+
+</body>
+</html>
