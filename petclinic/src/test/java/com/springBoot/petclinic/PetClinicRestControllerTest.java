@@ -25,6 +25,7 @@ public class PetClinicRestControllerTest {
 	public void setUp() {
 		restTemplate = new RestTemplate();
 	}
+	
 
 	@Test
 	public void testGetOwnerById() {
